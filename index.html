@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Manvi ❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="hearts-container"></div>
+    <div class="floating-particles"></div>
+    <div class="sparkle-overlay"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Envelope Section -->
+        <section id="envelope-section" class="active">
+            <div class="envelope-container">
+                <div class="mobile-header">
+                    <h1 class="mobile-title">Happy Birthday <span class="name-glow">Manvi</span><span class="heart-pulse">❤️</span></h1>
+                    <p class="mobile-subtitle">A Special Message From Hitesh</p>
+                </div>
+                
+                <div class="envelope">
+                    <div class="envelope-front">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body">
+                            <div class="heart-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h2 class="to-label">To My Beautiful Manvi</h2>
+                            <p class="from-label">From Your Hitesh ❤️</p>
+                        </div>
+                    </div>
+                    <div class="envelope-back"></div>
+                </div>
+                
+                <div class="letter hidden">
+                    <div class="letter-content">
+                        <h3>My Dearest Manvi,</h3>
+                        <p>Today is the most special day because it's YOUR day. This digital love letter is just a small token of how much you mean to me.</p>
+                        <p>Open this with all my love wrapped inside...</p>
+                        <div class="signature">Yours forever,<br><span class="signature-name">Hitesh</span></div>
+                    </div>
+                </div>
+                
+                <button id="open-btn" class="action-btn mobile-btn">
+                    <i class="fas fa-heart"></i>
+                    <span>Open With Love</span>
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+            
+            <div class="instructions">
+                <p class="touch-instruction">Touch the heart to open your surprise</p>
+                <div class="arrow">
+                    <i class="fas fa-hand-point-up"></i>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pages Section -->
+        <section id="pages-section" class="hidden">
+            <div class="pages-container">
+                <div class="mobile-pages-header">
+                    <h2><i class="fas fa-heart"></i> My Love Letter For Manvi <i class="fas fa-heart"></i></h2>
+                </div>
+                
+                <div class="page-controls">
+                    <button id="prev-btn" class="nav-btn mobile-nav-btn">
+                        <i class="fas fa-chevron-left"></i>
+                        <span>Back</span>
+                    </button>
+                    <div class="page-indicator">
+                        <i class="fas fa-heart"></i>
+                        <span id="current-page">1</span>/<span id="total-pages">6</span>
+                    </div>
+                    <button id="next-btn" class="nav-btn mobile-nav-btn">
+                        <span>Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="pages-wrapper">
+                    <!-- Page 1 -->
+                    <div class="page active" id="page-1">
+                        <div class="page-content">
+                            <div class="page-number">1</div>
+                            <div class="page-header">
+                                <h1>Happy Birthday <span class="highlight">Manvi</span></h1>
+                                <div class="heart-rain">
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="page-body">
+                                <!-- Manvi's Photo -->
+                                <div class="girlfriend-photo-container">
+                                    <div class="photo-frame">
+                                        <img src="m-phto.JPG" class="girlfriend-photo" alt="My Beautiful Manvi" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231a0b23%22/><text x=%2250%22 y=%2255%22 text-anchor=%22middle%22 font-family=%22Dancing Script%22 font-size=%2216%22 fill=%22%23f687b3%22>My Love</text></svg>'">
+                                    </div>
+                                    <div class="name-badge">
+                                        <i class="fas fa-crown"></i>
+                                        <span>Manvi</span>
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-content">
+                                    <p class="intro-text">Today, the stars are brighter because it's your day. The universe celebrates the day my beautiful Manvi was born.</p>
+                                    <p class="poem">Your smile is my sunrise,<br>
+                                    Your laugh is my favorite song,<br>
+                                    On this day I realize,<br>
+                                    Without you, nothing feels right,<br>
+                                    With you, everything feels strong.</p>
+                                </div>
+                                
+                                <div class="swipe-hint">
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span>Swipe for more love</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Page 2 -->
+                    <div class="page" id="page-2">
+                        <div class="page-content">
+                            <div class="page-number">2</div>
+                            <div class="page-header">
+                                <h2>Why My Heart <span class="highlight">Beats For Manvi</span></h2>
+                                <div class="flower-decoration">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                            </div>
+                            <div class="page-body">
+                                <div class="qualities-list">
+                                    <div class="quality-item">
+                                        <div class="quality-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="quality-text">
+                                            <h3>Your Radiant Soul</h3>
+                                            <p>Manvi, you shine brighter than a thousand stars, lighting up my darkest nights.</p>
+                                        </div>
+                                    </div>
+                                    <div class="quality-item">
+                                        <div class="quality-icon">
+                                            <i class="fas fa-smile"></i>
+                                        </div>
+                                        <div class="quality-text">
+                                            <h3>That Magical Smile</h3>
+                                            <p>Manvi's smile can melt glaciers and heal broken hearts - especially mine.</p>
+                                        </div>
+                                    </div>
+                                    <div class="quality-item">
+                                        <div class="quality-icon">
+                                            <i class="fas fa-gem"></i>
+                                        </div>
+                                        <div class="quality-text">
+                                            <h3>Your Pure Heart</h3>
+                                            <p>Manvi, you love with a purity that makes angels jealous and me the luckiest.</p>
+                                        </div>
+                                    </div>
+                                    <div class="quality-item">
+                                        <div class="quality-icon">
+                                            <i class="fas fa-moon"></i>
+                                        </div>
+                                        <div class="quality-text">
+                                            <h3>Your Calming Presence</h3>
+                                            <p>With you Manvi, every storm feels like a gentle rain, every worry disappears.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="nature-image-box">
+                                    <div class="image-label">Manvi, Our Love Is Like...</div>
+                                    <div class="nature-image" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3Vuc2V0JTIwYmVhY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80');">
+                                        <div class="image-overlay">A Beautiful Sunset - Always Painting My Sky With Colors</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Page 3 -->
+                    <div class="page" id="page-3">
+                        <div class="page-content">
+                            <div class="page-number">3</div>
+                            <div class="page-header">
+                                <h2>My <span class="highlight">Favorite Things About Manvi</span></h2>
+                                <div class="memory-decoration">
+                                    <i class="fas fa-infinity"></i>
+                                </div>
+                            </div>
+                            <div class="page-body">
+                                <div class="memory-grid">
+                                    <div class="memory-card">
+                                        <div class="memory-img" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RhcnJ5JTIwc2t5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=80');">
+                                            <div class="memory-overlay">
+                                                <p><i class="fas fa-heart"></i> Your Eyes</p>
+                                            </div>
+                                        </div>
+                                        <p class="memory-text">Manvi, your eyes sparkle brighter than the stars</p>
+                                    </div>
+                                    <div class="memory-card">
+                                        <div class="memory-img" style="background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhcnJ5JTIwc2t5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=80');">
+                                            <div class="memory-overlay">
+                                                <p><i class="fas fa-star"></i> Your Laugh</p>
+                                            </div>
+                                        </div>
+                                        <p class="memory-text">Manvi's laughter is the most beautiful music</p>
+                                    </div>
+                                    <div class="memory-card">
+                                        <div class="memory-img" style="background-image: url('https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=80');">
+                                            <div class="memory-overlay">
+                                                <p><i class="fas fa-water"></i> Your Kindness</p>
+                                            </div>
+                                        </div>
+                                        <p class="memory-text">Manvi, your kindness flows like peaceful waters</p>
+                                    </div>
+                                    <div class="memory-card">
+                                        <div class="memory-img" style="background-image: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5hdHVyZSUyMHNjZW5lcnklTIwbW91bnRhaW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=80');">
+                                            <div class="memory-overlay">
+                                                <p><i class="fas fa-mountain"></i> Your Strength</p>
+                                            </div>
+                                        </div>
+                                        <p class="memory-text">Manvi, you're as strong and majestic as mountains</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="memory-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>"Manvi, your presence in my life is the most beautiful landscape my heart has ever witnessed."</p>
+                                    <i class="fas fa-quote-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Page 4 -->
+                    <div class="page" id="page-4">
+                        <div class="page-content">
+                            <div class="page-number">4</div>
+                            <div class="page-header">
+                                <h2>My Birthday <span class="highlight">Wishes For Manvi</span></h2>
+                                <div class="wish-decoration">
+                                    <i class="fas fa-birthday-cake"></i>
+                                </div>
+                            </div>
+                            <div class="page-body">
+                                <div class="wish-container">
+                                    <div class="cake-animation">
+                                        <div class="cake">
+                                            <div class="candle">
+                                                <div class="flame"></div>
+                                            </div>
+                                            <div class="layer top"></div>
+                                            <div class="layer middle"></div>
+                                            <div class="layer bottom"></div>
+                                        </div>
+                                        <div class="sparkles">
+                                            <i class="fas fa-sparkle"></i>
+                                            <i class="fas fa-sparkle"></i>
+                                            <i class="fas fa-sparkle"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="wishes-list">
+                                        <div class="wish-item">
+                                            <div class="wish-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <p>May your heart always know love as pure as you give </p>
+                                        </div>
+                                        <div class="wish-item">
+                                            <div class="wish-icon">
+                                                <i class="fas fa-laugh-beam"></i>
+                                            </div>
+                                            <p>Endless laughter that echoes through your beautiful soul </p>
+                                        </div>
+                                        <div class="wish-item">
+                                            <div class="wish-icon">
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p>All your dreams twinkling into reality like stars at night</p>
+                                        </div>
+                                        <div class="wish-item">
+                                            <div class="wish-icon">
+                                                <i class="fas fa-sun"></i>
+                                            </div>
+                                            <p>Days brighter than sunshine for my beautiful Manvi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="nature-image-box">
+                                    <div class="image-label">Manvi, My Wish For Us...</div>
+                                    <div class="nature-image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=80');">
+                                        <div class="image-overlay">A Love That Stands Tall Like Mountains - Unshakable & Eternal</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="birthday-message">
+                                    <p>This year Manvi, may every sunrise bring you hope, every sunset bring you peace, and every moment in between bring you joy. You deserve the universe, my love.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Page 5 -->
+                    <div class="page" id="page-5">
+                        <div class="page-content">
+                            <div class="page-number">5</div>
+                            <div class="page-header">
+                                <h2>Forever <span class="highlight">Yours, Manvi</span></h2>
+                                <div class="final-decoration">
+                                    <i class="fas fa-heart-circle-check"></i>
+                                </div>
+                            </div>
+                            <div class="page-body">
+                                <div class="love-letter">
+                                    <div class="letter-paper">
+                                        <h3>My Dearest Manvi,</h3>
+                                        <p>As you read this, know that every word comes from the deepest part of my heart. You are not just my girlfriend - you are my muse, my peace, my greatest blessing.</p>
+                                        <p>Manvi, on this special day, I want to promise you that I will always cherish you, respect you, and love you with every beat of my heart. Your happiness will always be my priority.</p>
+                                        <p>Thank you for being the beautiful soul that you are. The world is better because you're in it, and my life is infinitely brighter with you by my side.</p>
+                                        <div class="closing">
+                                            <div class="eternal-promise">
+                                                <i class="fas fa-heart"></i>
+                                                <p>Today, tomorrow, and forever</p>
+                                            </div>
+                                            <h4>Hitesh</h4>
+                                            <div class="seal">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="nature-image-box">
+                                    <div class="image-label">Manvi, Our Future Together...</div>
+                                    <div class="nature-image" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RhcnJ5JTIwc2t5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=80');">
+                                        <div class="image-overlay">As Infinite And Beautiful As The Stars In The Sky</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="final-note">
+                                    <p><i class="fas fa-heart"></i> Manvi, you complete me in every way possible <i class="fas fa-heart"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Page 6 - Proposal Page -->
+                    <div class="page" id="page-6">
+                        <div class="page-content proposal-content">
+                            <div class="page-number">6</div>
+                            <div class="page-header">
+                                <h2>The Most Important <span class="highlight">Question For Manvi</span></h2>
+                                <div class="proposal-decoration">
+                                    <i class="fas fa-ring"></i>
+                                </div>
+                            </div>
+                            <div class="page-body">
+                                <div class="proposal-container">
+                                    <div class="proposal-image">
+                                        <div class="ring-animation">
+                                            <div class="ring">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <div class="sparkles">
+                                                <i class="fas fa-sparkle"></i>
+                                                <i class="fas fa-sparkle"></i>
+                                                <i class="fas fa-sparkle"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="proposal-text">
+                                        <h3 class="proposal-title">My Dearest Manvi,</h3>
+                                        <p class="proposal-message">From the moment you entered my life, every day has been a beautiful journey. You've shown me what true love means, and with every passing moment, my love for you grows stronger.</p>
+                                        <p class="proposal-message">Manvi, you are my sunshine on cloudy days, my strength in moments of weakness, and my happiness in every breath. I want to wake up next to you every morning and fall asleep holding you every night.</p>
+                                        <p class="proposal-message">I promise to stand by you through all of life's adventures, to cherish you, to respect you, and to love you more with each passing day. You are my everything, my today, and all my tomorrows.</p>
+                                        
+                                        <div class="proposal-question">
+                                            <div class="heart-line">
+                                                <i class="fas fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <h2 class="question">Manvi, Will You Marry Me?</h2>
+                                            <div class="heart-line">
+                                                <i class="fas fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="proposal-buttons">
+                                            <button id="no-btn" class="proposal-btn no-btn">
+                                                <i class="fas fa-times"></i>
+                                                <span>No</span>
+                                            </button>
+                                            <button id="yes-btn" class="proposal-btn yes-btn">
+                                                <i class="fas fa-heart"></i>
+                                                <span>Yes, Forever!</span>
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="proposal-note">
+                                            <p><i class="fas fa-heart"></i> Manvi, choose wisely my love</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proposal Response Pages -->
+                    <div class="page" id="page-yes">
+                        <div class="page-content">
+                            <div class="page-number">❤️</div>
+                            <div class="page-header">
+                                <h2>Manvi Said <span class="highlight">YES!</span></h2>
+                                <div class="yes-decoration">
+                                    <i class="fas fa-heart-circle-check"></i>
+                                </div>
+                            </div>
+                            <div class="page-body">
+                                <div class="response-container">
+                                    <div class="celebration-animation">
+                                        <div class="confetti"></div>
+                                        <div class="confetti"></div>
+                                        <div class="confetti"></div>
+                                        <div class="hearts-burst">
+                                            <i class="fas fa-heart"></i>
+                                            <i class="fas fa-heart"></i>
+                                            <i class="fas fa-heart"></i>
+                                            <i class="fas fa-heart"></i>
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="response-message">
+                                        <h3 class="response-title">My Heart Is Overflowing With Joy!</h3>
+                                        <p class="response-text">Manvi, you have made me the happiest man in the world! This moment will be etched in my heart forever.</p>
+                                        <p class="response-text">From this day forward, our journey becomes one. I promise to love you, cherish you, and stand by you through all of life's adventures.</p>
+                                        <p class="response-text">Thank you for saying yes, my beautiful Manvi. You've given me the greatest gift anyone could ever receive.</p>
+                                        
+                                        <div class="engagement-ring">
+                                            <div class="ring-display">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <p class="ring-text">Manvi, with this promise, I give you my heart forever</p>
+                                        </div>
+                                        
+                                        <div class="closing-message">
+                                            <p>I love you more than words could ever express, Manvi</p>
+                                            <h4>Your Future Husband,<br>Hitesh</h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="response-buttons">
+                                        <button id="close-site" class="action-btn mobile-btn">
+                                            <i class="fas fa-heart"></i>
+                                            <span>Close With Love</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="page" id="page-no">
+                        <div class="page-content">
+                            <div class="page-number">💔</div>
+                            <div class="page-header">
+                                <h2>Oh No! <span class="highlight">Manvi Can't Choose That</span></h2>
+                                <div class="no-decoration">
+                                    <i class="fas fa-heart-broken"></i>
+                                </div>
+                            </div>
+                            <div class="page-body">
+                                <div class="response-container">
+                                    <div class="sad-animation">
+                                        <div class="tear-drop"></div>
+                                        <div class="broken-heart">
+                                            <i class="fas fa-heart-broken"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="response-message">
+                                        <h3 class="response-title">My Love Manvi, There's Only One Option</h3>
+                                        <p class="response-text">Manvi, I understand you might be surprised, but my love for you is so strong that I simply cannot accept a "no".</p>
+                                        <p class="response-text">You are my soulmate, my destiny, and my forever. There's no universe where I don't end up with you, Manvi.</p>
+                                        <p class="response-text">So let me ask you again, my beautiful angel...</p>
+                                        
+                                        <div class="try-again">
+                                            <h2 class="question-again">Manvi, Will You Marry Me?</h2>
+                                            <p class="hint">(The "Yes" button is glowing for a reason 😊)</p>
+                                        </div>
+                                        
+                                        <div class="proposal-buttons">
+                                            <button id="back-to-proposal" class="proposal-btn yes-btn">
+                                                <i class="fas fa-heart"></i>
+                                                <span>Yes, Of Course!</span>
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="funny-note">
+                                            <p><i class="fas fa-smile-wink"></i> Manvi, you can't escape my love that easily!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Audio Elements -->
+    <audio id="bg-music" loop>
+        <source src="waalian-adding.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Control -->
+    <div class="music-control">
+        <button id="music-toggle" class="mobile-music-btn">
+            <i class="fas fa-music"></i>
+            <span class="music-text">Music</span>
+        </button>
+    </div>
+    
+    <!-- Love Tap Effect -->
+    <div id="love-tap-effect"></div>
+    
+    <!-- Hidden form for database submission -->
+    <form id="response-form" style="display: none;">
+        <input type="hidden" id="response-input" name="response">
+        <input type="hidden" id="user-agent" name="user_agent">
+        <input type="hidden" id="timestamp" name="timestamp">
+        <input type="hidden" id="girlfriend-name" name="girlfriend_name" value="Manvi">
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
